@@ -1,0 +1,31 @@
+.row{
+    color: white;
+}
+
+.row-images{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.row-images ::-webkit-scrollbar{
+    display: none;
+}
+.row-image{
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row-images :hover{
+    transform: scale(1.08);
+}
+
+
+.row-image-large{
+    max-height: 250px;
+}
